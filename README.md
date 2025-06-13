@@ -1,25 +1,13 @@
-🔍 Log Analysis for Cybersecurity Threat Detection
-This project uses structured prompt engineering with GPT-4 to detect potential cybersecurity threats from system log entries. It compares multiple prompt strategies—such as instruction-based, role-based, and few-shot techniques—to identify suspicious activities like brute-force attacks, malware, and data exfiltration.
+# Log Analysis Threat Detection Project
 
-🎯 Features
-Analyzes system logs for anomalies using GPT-4
+This project analyzes logs to detect cybersecurity threats using structured prompts evaluated by GPT-4.
 
-Compares 3 structured prompt variants
+## Setup
+- Python environment with pandas, openai, jinja2.
+- Update OpenAI API key in scripts/log_analysis_runner.py.
 
-Uses a rubric to evaluate threat detection accuracy, clarity, and actionability
-
-Refines prompts to improve AI performance
-
-Outputs organized threat assessments in CSV format
-
-📁 Structure
-scripts/: Python scripts and Jinja2 templates
-
-data/: Sample log entries
-
-results/: AI-generated threat analyses
-
-documentation/: Rubric, prompt strategies, and summary
-
-🧠 Use Case
-Ideal for students, researchers, or analysts exploring LLMs in cybersecurity threat detection scenarios.
+## Directory Structure
+- `scripts/`: Python scripts and Jinja2 templates.
+- `data/`: Sample log data.
+- `results/`: Analysis outputs.
+- `documentation/`: Evaluation and refinement documentation.

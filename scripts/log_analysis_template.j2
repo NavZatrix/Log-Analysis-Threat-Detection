@@ -1,0 +1,15 @@
+{% if variant == "instruction" %}
+Analyze the log entry below, clearly identifying threats, severity, and recommended actions:
+
+{{ log_entry }}
+{% elif variant == "soc_analyst" %}
+You are a SOC analyst. Identify threats, classify their severity, and suggest immediate actions:
+
+{{ log_entry }}
+{% elif variant == "few_shot" %}
+Example: "Detected brute-force login attempts. Severity: High. Action: Block IP immediately."
+
+Analyze similarly:
+
+{{ log_entry }}
+{% endif %}
