@@ -1,0 +1,10 @@
+Log_ID,Variant,LLM_Output
+Log_01,instruction,Threat detected: Brute-force login attempts. Severity: High. Action: Block IP and enable account lockout.
+Log_01,soc_analyst,"Multiple failed logins from 192.168.1.23. Severity: High. Recommendation: Block IP, enforce 2FA."
+Log_01,few_shot,Login failure pattern suggests brute-force. Severity: High. Action: Restrict access and monitor.
+Log_02,instruction,"Malware signature detected (Trojan.GenericKD). Severity: Critical. Action: Isolate host, initiate antivirus scan."
+Log_02,soc_analyst,Trojan detected on system. Severity: Critical. SOC Response: Quarantine system and notify team.
+Log_02,few_shot,High-risk malware found. Critical threat. Suggest: Immediate isolation and full scan.
+Log_03,instruction,Normal user login activity. No threat detected. Severity: None. Action: None required.
+Log_03,soc_analyst,Successful login for jsmith. No anomalies noted. Action: Log as normal event.
+Log_03,few_shot,No suspicious activity in log. User authentication successful. Severity: None.
